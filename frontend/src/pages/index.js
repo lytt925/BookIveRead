@@ -1,0 +1,7 @@
+export { default as Add } from './Add'
+export { default as Books } from './Books'
+export { default as Update } from './Update'
+export { default as UpdateNote } from './UpdateNote'
+export { default as Navbar } from './Navbar'
+export { default as Footer } from './Footer'
+export { default as BookInfo } from './BookInfo'

@@ -1,0 +1,139 @@
+body {
+    overflow-x: hidden;
+}
+
+.App {
+    padding-top: 80px;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    height: 90vh;
+    gap: 30px;
+}
+
+.book {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.book p {
+    margin: 0;
+}
+
+.book img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    background-color: rgb(203, 238, 227);
+}
+
+.buttons {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.delete {
+    border: none;
+    padding: 3px 6px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(245, 191, 191);
+    color: rgb(242, 100, 100);
+}
+
+.update {
+    border: none;
+    padding: 3px 6px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(204, 204, 243);
+    color: rgb(139, 139, 234);
+
+}
+
+.update a {
+    text-decoration: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.formButton {
+    border: none;
+    padding: 10px;
+    background-color: rgb(244, 142, 74);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bookInfo {
+    min-width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+}
+
+.bookAbs {
+    width: 400px;
+}
+
+.bookTitle {
+    text-align: start;
+    line-break: normal;
+}
+
+.bookTitle a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+.bookAbs p {
+    line-break: normal;
+    overflow-wrap: break-word;
+    text-align: start;
+}
+
+.bookInfo img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    background-color: rgb(203, 238, 227);
+}
+
+@media screen and (max-width: 880px) {
+    .bookInfo {
+        flex-direction: column;
+    }
+}
